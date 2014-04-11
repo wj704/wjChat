@@ -1,0 +1,22 @@
+{
+  "name": "wjChat2",
+  "version": "0.0.0",
+  "description": "this example is wjchat2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@heroku.com:wjherochat2.git"
+  },
+  "keywords": [
+    "wjchat2"
+  ],
+  "author": "wj",
+  "license": "MIT",
+  "engines": {
+    "node": "0.10.x"
+  }
+}
