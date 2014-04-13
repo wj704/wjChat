@@ -7,9 +7,9 @@ var express = require('express'),
 app.use('/', express.static(__dirname + '/www'));
 //bind the server to the 3000 port
 //server.listen(3000);//for local test
-server.listen(3000);//publish to heroku
+server.listen(process.env.PORT ||3000);//publish to heroku
 //server.listen(process.env.OPENSHIFT_NODEJS_PORT || 3000);//publish to openshift
-console.log('server started on port'+3000);
+console.log('server started on port'+process.env.PORT ||3000);
 
 //socket部分
 io.on('connection', function(socket) { //在connection事件的回调函数中，socket表示的是当前连接到服务器的那个客户端
